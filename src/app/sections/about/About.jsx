@@ -11,7 +11,7 @@ const AboutSection = () => {
     const currentTranslations = translations[language]
     return (
         <section id="about" className="flex md:flex-row w-full px-5 py-10 border-black border-b">
-            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-0 md:gap-6">
                 <div className="text-[#ADD9E9] md:w-2/4 w-full flex flex-col gap-5">
                     <h4 className="text-[50px] relative text-white after:absolute w-fit after:w-3/4 after:h-0.5 after:bg-black after:content-[''] after:-bottom-0 after:left-0">{currentTranslations.about.title}</h4>
                     <p className="text-[24px] leading-8 font-[500]">
@@ -27,6 +27,7 @@ const AboutSection = () => {
                         {currentTranslations.about.p3}
                     </p>
                 </div>
+                <div className="flex flex-col items-center">
                 <motion.div className="md:w-2/5 w-full flex justify-center"
                             initial={{scale : 1}} // Start at normal size
                             animate={{
@@ -42,6 +43,8 @@ const AboutSection = () => {
                     <Image src={HeadingImage} alt="smthn" width={400} height={400}
                            className="rounded-[50%] h-[335px] lg:h-[400px] object-cover"/>
                 </motion.div>
+                    <h4 className="text-[#ADD9E9] text-[40px]">Railtok Recruitment</h4>
+                </div>
 
             </div>
         </section>

@@ -51,11 +51,6 @@ const MobMenu = ({ opened, toggle, language }) => {
 
             <ButtonWithModal toggle={toggle}/>
             </div>
-            <div className="bg-[#1b2244] w-full flex justify-center text-white relative py-2">
-                <button text="UA" onClick={() => language('uk')}>UA</button>
-                <button text="EN" onClick={() => language('en')}>EN</button>
-                <button text="RU" onClick={() => language('ru')}>RU</button>
-            </div>
         </div>
     )
 }
@@ -63,7 +58,7 @@ const MobMenu = ({ opened, toggle, language }) => {
 const BurgerMenu = ({opened, toggle, language}) => {
     return (
         <>
-            <button className="w-full pl-3 md:hidden" onClick={toggle}>
+            <button className="w-fit pl-3 md:hidden" onClick={toggle}>
                 {opened ? (
                     <IoMdClose className="w-9 h-9 md:hidden text-white"/>
                 ) : (

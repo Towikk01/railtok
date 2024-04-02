@@ -28,9 +28,14 @@ const Header = () => {
     return (
         <header className="flex flex-row justify-between py-3  z-20 fixed w-full bg-[#1b2244] items-center">
             <div
-                className="flex flex-row items-center justify-center relative md:justify-between w-full max-w-[1000px] mx-auto px-5">
+                className="flex flex-row items-center justify-between relative md:justify-between w-full max-w-[1000px] mx-auto px-5">
                 <BurgerMenu opened={opened} toggle={toggleOpenedMenu} language={language}/>
                 <Image src={Logo} alt="logo" width={120} height={120}/>
+                <div className="flex md:hidden flex-row gap-1">
+                    <button onClick={() => setLanguage ('uk')}>UA</button>
+                    <button onClick={() => setLanguage ('en')}>EN</button>
+                    <button onClick={() => setLanguage ('ru')}>RU</button>
+                </div>
                 <div className="hidden md:flex flex-row gap-8 justify-around items-center w-full px-5 lg:w-3/5">
                     {navigation.map ((item, index) => (
                         <Link key={index} href={item.link} className="whitespace-pre">

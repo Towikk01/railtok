@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const VacationCard = ({ title,  country, sellary, schedule, food, accomodation, requirements, description, backgroundImage }) => {
     return (
-        <figure className="relative text-white bg-cover bg-center h-full rounded-lg shadow-md overflow-hidden">
+        <figure className="relative text-white bg-cover bg-center h-full rounded-lg h-fit shadow-md overflow-hidden">
             <Image
                 src={backgroundImage}
                 alt="Background"

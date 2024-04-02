@@ -12,7 +12,7 @@ export const translations = {
                     contacts: 'Контакты',
                 },
              heading: {
-                 title: 'Railtok recruitment это компания которая предоставляет работу во многих странах Евросоюза.',
+                 title: 'Railtok Recruitment это компания которая предоставляет работу во многих странах Евросоюза.',
                  description: 'Надоела старая работа? Хочешь поменять работодателя? Плохое жилье? Маленькая зарплата? Плохое отношение? Тогда сразу пишите менеджеру - он подберет вакансию, которая точно вам понравится!'
              },
              about: {
@@ -105,8 +105,8 @@ export const translations = {
                  footer: {
         title: 'Ссылки на группы с вакансиями',
         link1: 'Вакансии в Польше',
-        link2: 'Вакансии в Германии',
-        link3: 'Вакансии во Франции',
+        link2: 'Вакансии в западной Европе',
+        link3: 'Вакансии во Эстонии',
     },
              button : 'Написать менеджеру'}
          ,
@@ -120,7 +120,7 @@ export const translations = {
                     contacts: 'Contacts',
                 },
                 heading: {
-                    title: 'Railtok recruitment is a company that provides work in many European Union countries.',
+                    title: 'Railtok Recruitment is a company that provides work in many European Union countries.',
                     description: 'Tired of the old job? Want to change employer? Bad housing? Low salary? Bad attitude? Then write to the manager right away - he will pick up a vacancy that you will definitely like!'
                 },
                 about: {
@@ -208,8 +208,8 @@ export const translations = {
                 footer : {
                     title: 'Links to groups with vacancies',
                     link1: 'Vacancies in Poland',
-                    link2: 'Vacancies in Germany',
-                    link3: 'Vacancies in France',
+                    link2: 'Vacancies in Western Europe',
+                    link3: 'Vacancies in Estonia',
                 },
                 button: 'Contact a manager',
                 features: [['Official employment', 'Verified employers', 'Vacancies for men, women, and couples', 'Vacancies under Umowa Zlecenia and Umowa o pracę terms'],
@@ -226,13 +226,13 @@ export const translations = {
             contacts: 'Контакти',
          },
         heading: {
-            title: 'Railtok recruitment - це компанія, яка надає роботу в багатьох країнах Євросоюзу.',
+            title: 'Railtok Recruitment - це компанія, яка надає роботу в багатьох країнах Євросоюзу.',
             description: 'Набридла стара робота? Хочеш змінити роботодавця? Погане житло? Маленька зарплата? Погане ставлення? Тоді відразу пишіть менеджеру - він підбере вакансію, яка точно вам сподобається!'
 },
         about: {
             title: 'Трохи про нас',
             description: 'Наша компанія надає роботу для громадян України, Молдови, Білорусі, Центральної Азії віком від 18 до 60+ років.',
-            p1: 'Ми працюємо тільки з перевіреними роботодавцями, тому трудове устройство тільки офіційне.',
+            p1: 'Ми працюємо тільки з перевіреними роботодавцями, тому працевлаштування тільки офіційне.',
             p2: 'Якщо у вас немає робочої візи або запрошення на роботу, але ви хочете працювати - немає проблем, ми допоможемо вам оформити всі документи.',
             p3: 'Ми проводимо повний супровід як на етапі підбору, так і на протязі всього періоду трудової діяльності. Наші координатори вас ніколи не залишать.'
     },
@@ -319,7 +319,7 @@ export const translations = {
         footer: {
             title: 'Посилання на групи з вакансіями',
             link1: 'Вакансії в Польщі',
-            link2: 'Вакансії в Німеччині',
+            link2: 'Вакансії в західній Європі',
             link3: 'Вакансії во Франції',
         },
         button: 'Написати менеджеру'
