@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const VacationCard = ({ title,  country, sellary, schedule, food, accomodation, requirements, description, backgroundImage }) => {
     return (
-        <figure className="relative text-white bg-cover bg-center h-full rounded-lg h-fit shadow-md overflow-hidden">
+        <figure className="relative text-white bg-cover bg-center rounded-lg h-full shadow-md overflow-hidden">
             <Image
                 src={backgroundImage}
                 alt="Background"
@@ -12,17 +12,17 @@ const VacationCard = ({ title,  country, sellary, schedule, food, accomodation, 
                 className="opacity-50"
             />
             <figcaption className="relative z-10 p-3 flex flex-col justify-between bg-black bg-opacity-50 h-full">
-                <h3 className="text-xl font-bold mb-2 text-center">{title}</h3>
-                <div className="flex flex-col justify-center gap-2">
+                <h3 className="text-xl font-bold mb-2 text-center h-full">{title}</h3>
+                <div className="flex flex-col justify-center gap-2 h-full">
                     <span className="text-[14px]">{country}</span>
                     <span className="text-[14px]">{sellary}</span>
                 </div>
-                <ul className="my-auto">
+                <ul className="my-auto h-full">
                     {description.map ((item, index) => (
                         <li key={index} className="text-sm">{item}</li>
                     ))}
                 </ul>
-                <div className="flex flex-col mt-auto">
+                <div className="flex flex-col mt-auto h-full">
                 <p className="text-sm mt-2">{schedule}</p>
                 <p className="text-sm mt-1">{accomodation}</p>
                 <p className="text-sm mt-1">{requirements}</p>

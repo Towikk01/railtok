@@ -12,7 +12,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules'
     const ReviewSlider = ({ reviews }) => {
         return (
             <Swiper
-                className='h-[340px]'
+                className='h-full'
 
                 modules={[Pagination, Autoplay, Navigation]}
                 spaceBetween={8}

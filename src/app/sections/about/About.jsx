@@ -17,13 +17,13 @@ const AboutSection = () => {
                     <p className="text-[24px] leading-8 font-[500]">
                         {currentTranslations.about.description}
                     </p>
-                    <p>
+                    <p className="text-[24px]">
                         {currentTranslations.about.p1}
                     </p>
-                    <p>
+                    <p className="text-[20px]">
                         {currentTranslations.about.p2}
                     </p>
-                    <p>
+                    <p className="text-[20px]">
                         {currentTranslations.about.p3}
                     </p>
                 </div>

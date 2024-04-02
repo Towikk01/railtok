@@ -16,7 +16,7 @@ const Vacations = () => {
     return (
         <section id="vacations" className="flex flex-col w-full px-5 py-12">
             <h2 className="font-normal text-white whitespace-normal md:whitespace-pre text-[48px] text-center mb-8">{currentTranslations.vacancies.title}</h2>
-            <div className="grid grid-cols-1 h-full w-full sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 h-full w-full  sm:grid-cols-3 gap-4">
                 {jobsData.map((job) => (
                     <VacationCard
                         key={job.id}
