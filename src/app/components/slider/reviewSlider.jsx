@@ -13,6 +13,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules'
         return (
             <Swiper
                 className='h-[340px]'
+
                 modules={[Pagination, Autoplay, Navigation]}
                 spaceBetween={8}
                 slidesPerView={1}
