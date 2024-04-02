@@ -11,7 +11,7 @@ const AboutSection = () => {
     const currentTranslations = translations[language]
     return (
         <section id="about" className="flex md:flex-row w-full px-5 py-10 border-black border-b">
-            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-0 md:gap-6">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-0">
                 <div className="text-[#ADD9E9] md:w-2/4 w-full flex flex-col gap-5">
                     <h4 className="text-[50px] relative text-white after:absolute w-fit after:w-3/4 after:h-0.5 after:bg-black after:content-[''] after:-bottom-0 after:left-0">{currentTranslations.about.title}</h4>
                     <p className="text-[24px] leading-8 font-[500]">
@@ -28,7 +28,7 @@ const AboutSection = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center">
-                <motion.div className="md:w-2/5 w-full flex justify-center"
+                <motion.div className="w-full flex justify-center"
                             initial={{scale : 1}} // Start at normal size
                             animate={{
                                 scale : [1, 1.25, 1], // Pulse from normal size to slightly larger and back
