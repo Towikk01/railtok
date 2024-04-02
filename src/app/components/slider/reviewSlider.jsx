@@ -14,12 +14,12 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules'
             <Swiper
                 className='h-full'
 
-                modules={[Pagination, Autoplay, Navigation]}
+                modules={[Pagination, Autoplay]}
                 spaceBetween={8}
                 slidesPerView={1}
                 pagination={{ clickable: true, type: 'bullets' }}
                 loop={true}
-                navigation={true}
+                // navigation={true}
                 autoplay={{ delay: 6500, disableOnInteraction: false }}
             >
                 {reviews.map((review, index) => (
