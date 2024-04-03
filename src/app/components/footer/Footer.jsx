@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaViber} from 'react-icons/fa';
 import Button from "@/app/components/button/Button";
 import {useLanguage} from "@/app/LanguageContext";
 import {translations} from "@/app/translations";
@@ -17,9 +17,9 @@ const Footer = () => {
                 <div className="mb-4 md:mb-0">
                     <h5 className="font-bold text-lg mb-2">{currentTranslations.footer.title}</h5>
         <ul className="flex flex-col gap-2">
-            <li><a href="https://invite.viber.com/?g2=AQAT6jtHEk%2BJz1FrBRnUQ5uNv1JQ0PkpoFBzqBG5a%2Bz9hY5pK5IUkglH62JOTo0b&lang=ru" target="_blank" rel="noopener noreferrer">{currentTranslations.footer.link1}</a></li>
-            <li><a href="https://invite.viber.com/?g2=AQAinpYsOGZ0nFH3XCEXg%2FBmfRNwSzJOXSG6CEbE67g%2Bm89pPZnXNxjgAA2YRs4A&lang=ru" target="_blank" rel="noopener noreferrer">{currentTranslations.footer.link2}</a></li>
-            <li><a href="https://invite.viber.com/?g2=AQAA8ff6%2FE8w8lJsrWlVH%2FA9n4MyCU5%2BvKTK7JJrOLpncNPr7P8cE0pGVP97RGYe&lang=ru" target="_blank" rel="noopener noreferrer">{currentTranslations.footer.link3}</a></li>
+            <li><a className="flex flex-row items-center gap-1 underline" href="https://invite.viber.com/?g2=AQAT6jtHEk%2BJz1FrBRnUQ5uNv1JQ0PkpoFBzqBG5a%2Bz9hY5pK5IUkglH62JOTo0b&lang=ru" target="_blank" rel="noopener noreferrer"><FaViber/>{currentTranslations.footer.link1} </a></li>
+            <li><a className="flex flex-row items-center gap-1 underline" href="https://invite.viber.com/?g2=AQAinpYsOGZ0nFH3XCEXg%2FBmfRNwSzJOXSG6CEbE67g%2Bm89pPZnXNxjgAA2YRs4A&lang=ru" target="_blank" rel="noopener noreferrer"><FaViber/>{currentTranslations.footer.link2}</a></li>
+            <li><a className="flex flex-row items-center gap-1 underline" href="https://invite.viber.com/?g2=AQAA8ff6%2FE8w8lJsrWlVH%2FA9n4MyCU5%2BvKTK7JJrOLpncNPr7P8cE0pGVP97RGYe&lang=ru" target="_blank" rel="noopener noreferrer"><FaViber/>{currentTranslations.footer.link3}</a></li>
         </ul>
 
                 </div>

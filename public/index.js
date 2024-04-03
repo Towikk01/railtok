@@ -21,5 +21,8 @@ export {default as Florist} from './Florist.jpeg'
 export {default as Flowers} from './Flowers.jpeg'
 export {default as Fermer} from './Fermer.jpeg'
 export {default as TV} from './TV.jpeg'
+export {default as Fly} from './Fly.jpeg'
+export {default as Auto} from './Auto.jpeg'
+export {default as Food} from './food.jpeg'
 
 
