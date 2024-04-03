@@ -69,7 +69,7 @@ const ButtonWithModal = () => {
                         <FaViber className="text-purple-600 text-6xl"/>
                         <span className="mt-2 text-sm text-white font-semibold">Viber</span>
                     </a>
-                    <a href="t.me/@alekskot44" className="flex flex-col items-center">
+                    <a href="https://t.me/+48734701011" className="flex flex-col items-center">
                         <FaTelegramPlane className="text-blue-400 text-6xl"/>
                         <span className="mt-2 text-sm text-white font-semibold">Telegram</span>
                     </a>
