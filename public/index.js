@@ -24,5 +24,6 @@ export {default as TV} from './TV.jpeg'
 export {default as Fly} from './Fly.jpeg'
 export {default as Auto} from './Auto.jpeg'
 export {default as Food} from './food.jpeg'
+export {default as favicon} from './favicon.png'
 
 

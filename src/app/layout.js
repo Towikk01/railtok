@@ -6,16 +6,16 @@ import ParticlesBG from "@/app/components/particles/ParticlesBG";
 import Footer from "@/app/components/footer/Footer";
 import {LanguageProvider} from "@/app/LanguageContext";
 import ScrollToTopButton from "@/app/components/scrolltotop/ScrollToTopButton";
-
-
+import {favicon} from "../../public";
 
 
 const fenix = Fenix({ subsets: ["latin"], display: "swap", weight: "400" });
 
 export const metadata = {
-  title: "Railtok recruitment",
-  description: "Recruitment agency for people who want to work abroad on a European countries",
+  title: "Railtok Recruitment",
+  description: "Робота у Польщі та країнах Західної Європи. Ми допоможемо підібрати саме ту вакансію яку ти потребуєш. Робота для чоловіків, жінок та сімейних пар. Не зволікай - пиши менеджеру. Ми маємо багатий вибір вакансій по всій території Польщі!",
   keywords: "Recruitment, agency, work, abroad, Europe, Poland, Estonia, work, recruitment, job, houses, reviews, vacations, contact, about, features, reviews, vacancies, slider, card, button, particles, footer, header, scroll, smooth, particles, language, context, next, font, google",
+  image: favicon,
 }
 
 export default function RootLayout({ children }) {
