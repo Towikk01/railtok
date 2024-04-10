@@ -32,6 +32,8 @@ module.exports = {
 			'error',
 			'tab'
 		],
+		'no-console': 'off',
+		'react/prop-types': 'off',
 		'linebreak-style': [
 			'error',
 			'unix'
