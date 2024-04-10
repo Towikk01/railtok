@@ -1,7 +1,5 @@
 'use client';
 import { FiMessageSquare } from 'react-icons/fi';
-
-
 import React, { useState, useRef, useEffect } from 'react';
 import {FaComments,  FaTelegramPlane, FaViber, FaWhatsapp} from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
