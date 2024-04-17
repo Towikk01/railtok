@@ -32,30 +32,34 @@ export const Modal = ({ onClose, children }) => {
 };
 
 const Button = ({ onClick }) => {
+	const { language } = useLanguage();
+	const currentTranslations = translations[language];
 	return (
-		<div className="contact-btn-wrapper relative z-50 flex items-center justify-center">
-			<span className="wave-effect"></span>
-			<button
-				className="contact-btn text-[#f4f3ed] z-50 text-xl bg-blue-700 rounded-full p-3
-                           hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center"
-				onClick={onClick}
-			>
-				<FiMessageSquare className="text-4xl"/>
-			</button>
+		<div className="contact-btn-wrapper relative z-50 flex gap-2 flex-col items-center justify-center">
+			<div className="relative flex items-center justify-center">
+				<span className="wave-effect"></span>
+				<button
+					className="contact-btn text-[#f4f3ed] z-50 text-xl bg-blue-700 rounded-full p-3
+							   hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center"
+					onClick={onClick}
+				>
+					<FiMessageSquare className="text-4xl" />
+				</button>
+			</div>
+			<span className="text-[18px] text-white font-semibold">{currentTranslations.button}</span>
 		</div>
 	);
 };
 
 const ButtonWithModal = () => {
-	const { language } = useLanguage();
-	const currentTranslations = translations[language];
+
 	const [isModalOpen, setModalOpen] = useState(false);
 
 	const openModal = () => setModalOpen(true);
 	const closeModal = () => setModalOpen(false);
 
 	return (
-		<div className="fixed bottom-12 right-8 z-50">
+		<div className="fixed bottom-16 right-8 z-50">
 			<Button onClick={openModal} />
 			{isModalOpen && <Modal onClose={closeModal}>
 				<button className="self-end" onClick={closeModal}>
