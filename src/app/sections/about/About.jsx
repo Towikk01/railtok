@@ -1,10 +1,8 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
-import {HeadingImage} from '../../../../public';
-import {motion} from 'framer-motion';
 import {useLanguage} from '@/app/LanguageContext';
 import {translations} from '@/app/translations';
+import SimpleButton from '@/app/components/button/SimpleButton';
 
 const AboutSection = () => {
 	const { language, setLanguage } = useLanguage();
@@ -27,8 +25,9 @@ const AboutSection = () => {
 						{currentTranslations.about.p3}
 					</p>
 				</div>
-				<div className="flex flex-col items-center">
+				<div className="flex flex-col gap-2 items-center">
 					<h4 className={'gradient text-[#ADD9E9] text-center text-[40px]'}>Railtok Recruitment</h4>
+					<SimpleButton text={currentTranslations.button.title}/>
 				</div>
 			</div>
 		</section>

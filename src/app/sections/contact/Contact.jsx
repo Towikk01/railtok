@@ -13,7 +13,6 @@ const Contact = () => {
 				<h4 className="text-[50px] text-white w-fit text-center">{currentTranslations.contacts.title}</h4>
 				<SimpleButton text={currentTranslations.button.title}/>
 			</div>
-
 		</section>
 	);
 };

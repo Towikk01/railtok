@@ -61,7 +61,7 @@ body {
 .gradient {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #bde6ed, #1b2244);
+  background-image: linear-gradient(to right, rgb(8 35 111), #1b2244);
 }
 
 .wave-effect {
