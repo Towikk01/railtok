@@ -58,6 +58,12 @@ body {
   position: relative;
 }
 
+.gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #bde6ed, #1b2244);
+}
+
 .wave-effect {
   position: absolute;
   width: 100%;
@@ -65,7 +71,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  animation: pulse-wave 2s infinite ease-out;
+  animation: pulse-wave 1s infinite ease-out;
 }
 
 .contact-btn {
@@ -77,16 +83,16 @@ body {
 
 @keyframes pulse-wave {
   0% {
-    transform: scale(1);
+    transform: scale(0.6);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
   }
   100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
   }
 }
 

@@ -6,7 +6,7 @@ import { IoMdClose } from 'react-icons/io';
 import { useLanguage } from '@/app/LanguageContext';
 import { translations } from '@/app/translations';
 
-const Modal = ({ onClose, children }) => {
+export const Modal = ({ onClose, children }) => {
 	const modalRef = useRef();
 
 	const handleCloseClick = (e) => {
@@ -55,7 +55,7 @@ const ButtonWithModal = () => {
 	const closeModal = () => setModalOpen(false);
 
 	return (
-		<div className="fixed bottom-4 right-4 z-50">
+		<div className="fixed bottom-12 right-8 z-50">
 			<Button onClick={openModal} />
 			{isModalOpen && <Modal onClose={closeModal}>
 				<button className="self-end" onClick={closeModal}>

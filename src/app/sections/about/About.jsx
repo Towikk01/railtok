@@ -28,22 +28,7 @@ const AboutSection = () => {
 					</p>
 				</div>
 				<div className="flex flex-col items-center">
-					<motion.div className="w-full flex flex-col justify-center"
-						initial={{scale : 1}} // Start at normal size
-						animate={{
-							scale : [1, 1.15, 1], // Pulse from normal size to slightly larger and back
-						}}
-						transition={{
-							duration : 1.5, // Duration of each pulse
-							ease : 'linear', // Use a linear easing for consistent pulse speed
-							repeat : Infinity, // Repeat the animation indefinitely
-							repeatType : 'loop' // Ensure the animation loops
-						}}
-					>
-						<Image src={HeadingImage} alt="smthn" width={400} height={400}
-							className="rounded-[50%] h-[335px] lg:h-[400px] object-cover"/>
-						<h4 className="text-[#ADD9E9] text-center text-[40px]">Railtok Recruitment</h4>
-					</motion.div>
+					<h4 className={'gradient text-[#ADD9E9] text-center text-[40px]'}>Railtok Recruitment</h4>
 				</div>
 			</div>
 		</section>
