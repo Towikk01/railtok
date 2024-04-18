@@ -12,7 +12,7 @@ const Features = () => {
 	const currentTranslations = translations[language];
 
 
-	const datablocks =[currentTranslations.features[0], currentTranslations.features[1], currentTranslations.features[2]];
+	const datablocks =[currentTranslations.features.benefits[0], currentTranslations.features.benefits[1], currentTranslations.features.benefits[2]];
 
 	return (
 		<section id="features" className="flex flex-col w-full px-5 py-10 border-black border-b">

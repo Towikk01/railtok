@@ -24,6 +24,9 @@ const AboutSection = () => {
 					<p className="text-[20px]">
 						{currentTranslations.about.p3}
 					</p>
+					<p className="text-[20px]">
+						{currentTranslations.about.p4}
+					</p>
 				</div>
 				<div className="flex flex-col gap-2 items-center">
 					<h4 className={'gradient text-[#ADD9E9] text-center text-[40px]'}>Railtok Recruitment</h4>

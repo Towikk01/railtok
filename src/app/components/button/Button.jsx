@@ -15,6 +15,8 @@ export const Modal = ({ onClose }) => {
 		}
 	};
 
+	const { language } = useLanguage();
+	const currentTranslations = translations[language];
 	useEffect(() => {
 		const handleClickOutside = (e) => {
 			if (modalRef.current && !modalRef.current.contains(e.target)) {
@@ -35,7 +37,7 @@ export const Modal = ({ onClose }) => {
 				<button className="self-end" onClick={onClose}>
 					<IoMdClose className="text-white text-3xl" />
 				</button>
-				<div className="text-white text-xl font-semibold text-center mb-4">Написати менеджеру</div>
+				<div className="text-white text-xl font-semibold text-center mb-4">{currentTranslations.button}</div>
 				<div className="flex items-center md:gap-5 justify-around rounded-lg">
 					<a href="viber://contact?number=%2B48734701011" className="flex flex-col items-center">
 						<FaViber className="text-purple-600 text-6xl" />
@@ -59,7 +61,7 @@ const Button = ({ onClick }) => {
 	const { language } = useLanguage();
 	const currentTranslations = translations[language];
 	return (
-		<div className="contact-btn-wrapper relative z-50 flex flex-col flex flex-col gap-1.5 items-center justify-center">
+		<div className="contact-btn-wrapper relative z-50 flex flex-col flex flex-col gap-2 items-center justify-center">
 			<div className="relative flex items-center justify-center">
 				<span className="wave-effect"></span>
 				<button
@@ -71,8 +73,8 @@ const Button = ({ onClick }) => {
 				</button>
 			</div>
 			<div className="text-white font-semibold animate-bounce" style={{ textAlign: 'center' }}>
-				<span className="block text-[15px]">{currentTranslations.button.split(' ')[0].toUpperCase()}</span>
-				<span className="block text-[15px]">{currentTranslations.button.split(' ')[1].toUpperCase()}</span>
+				<span className="block text-[15px] text-black">{currentTranslations.button.split(' ')[0].toUpperCase()}</span>
+				<span className="block text-[15px] text-black">{language === 'en'? '' :currentTranslations.button.split(' ')[1].toUpperCase()}</span>
 			</div>
 		</div>
 	);

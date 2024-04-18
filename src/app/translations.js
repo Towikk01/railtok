@@ -20,7 +20,8 @@ export const translations = {
 			description: 'Наша компания предоставляет работу для граждан Украины, Молдовы, Белорусии, Средней Азии в возрасте от 18 до 60+ лет.',
 			p1: 'Мы работаем только с проверенными работодателями, поэтому трудоустройство только официальное.',
 			p2: 'Если у вас нет рабочей визы или приглашения для работы но вы хотите работать - не проблема, мы поможем вам оформить все документы.',
-			p3: 'Мы проводим полное сопровождение как на этапе подбора, так и на протяжении всего периода трудовой деятельности. Наши координаторы вас никогда не бросят с нерешенным вопросом.'
+			p3: 'Мы проводим полное сопровождение как на этапе подбора, так и на протяжении всего периода трудовой деятельности. Наши координаторы вас никогда не бросят с нерешенным вопросом.',
+			p4: 'Мы являемся ведущими экспертами в области трудоустройства за рубежом, предоставляя высочайшее качество услуг. Мы хорошо понимаем ваши вопросы и потребности, поскольку лично прошли каждый этап этого процесса и обладаем глубоким пониманием нашей работы.'
 		},
 		contacts: {
 			title: 'Напишите нам сейчас чтобы узнать больше информации!'
@@ -40,10 +41,11 @@ export const translations = {
 				{name: 'Ксения и Вадим Алиевы 35 и 41 год', date: '30.03.2022', reviewText: 'Мы с подругою поїхали на роботу до Польщі, це був наш перший виїзд за кордон, але завдяки Олександру він пройшов дуже добре, дякую.'},
 			]
 		},
-		features: [['Официальное трудоустройство', 'Проверенные работодатели','Вакансии для мужчин, женщин и семейных пар','Вакансии по Umowa Zlecenia и Umowa o pracę' ],
-			['Рабочее жилье (квартиры, дома, хостел)', 'Отдельные комнаты для семейных пар', 'Рабочее жилье с детьми от 8 лет', 'Доплата за свое жилье' ],
-			['Изготовление документов', 'Польская рабочая виза', 'Справка студента', 'Параграф 24 в Германии', 'Прописка, налоговый номер, страховка и банковский счет'],
-		],
+		features:{ title: 'Преимущества сотрудничества с нами',
+			benefits: [['Официальное трудоустройство', 'Проверенные работодатели','Вакансии для мужчин, женщин и семейных пар','Вакансии по Umowa Zlecenia и Umowa o pracę' ],
+				['Рабочее жилье (квартиры, дома, хостел)', 'Отдельные комнаты для семейных пар', 'Рабочее жилье с детьми от 8 лет', 'Доплата за свое жилье' ],
+				['Изготовление документов', 'Польская рабочая виза', 'Справка студента', 'Параграф 24 в Германии', 'Прописка, налоговый номер, страховка и банковский счет'],
+			]},
 		vacancies: {
 			title: 'Популярные вакансии',
 			description: 'Выберите вакансию, которая вас интересует, и свяжитесь с менеджером для получения дополнительной информации.',
@@ -164,6 +166,23 @@ export const translations = {
 			link2: 'Вакансии в западной Европе',
 			link3: 'Вакансии в Эстонии',
 		},
+		apply: {title: 'Этапы трудоустройства',
+			description: [ {
+				title: 'Выбор вакансии',
+				description: 'Выберите вакансию, которая вас интересует. Наши специалисты проводят индивидуальный подбор вариантов, чтобы удовлетворить ваши потребности.'
+			},
+			{
+				title: 'Оформление документов',
+				description: 'Все устраивает? Отлично! Теперь вам нужно оформить документы. Наши менеджеры помогут вам в этом.'
+			},
+			{
+				title: 'Приезд и заселение',
+				description: 'После оформления документов важно точно следовать инструкциям, предоставленным менеджером. Вас свяжут с координатором или офисом для организации заселения в жилом помещении.'
+			},
+			{
+				title: 'Выход на работу',
+				description: 'Продолжайте поддерживать связь с вашим менеджером. Он поможет вам с организацией выхода на работу.',
+			}]},
 		button : 'Написать менеджеру'}
 	,
 	en: {
@@ -184,7 +203,8 @@ export const translations = {
 			description: 'Our company provides work for citizens of Ukraine, Moldova, Belarus, Central Asia aged 18 to 60+ years.',
 			p1: 'We only work with verified employers, so employment is only official.',
 			p2: 'If you do not have a work visa or an invitation to work but you want to work - no problem, we will help you arrange all the documents.',
-			p3: 'We provide full support both at the selection stage and throughout the entire period of employment. Our coordinators will never leave you.'
+			p3: 'We provide full support both at the selection stage and throughout the entire period of employment. Our coordinators will never leave you.',
+			p4: 'We are leading experts in the field of employment abroad, providing the highest quality of services. We understand your questions and needs well, as we have personally gone through each stage of this process and possess a deep understanding of our work.'
 		},
 		contacts: {
 			title: 'Write to us now to find out more information!'
@@ -323,9 +343,29 @@ export const translations = {
 			link3: 'Vacancies in Estonia',
 		},
 		button: 'Contact a manager',
-		features: [['Official employment', 'Verified employers', 'Vacancies for men, women, and couples', 'Vacancies under Umowa Zlecenia and Umowa o pracę terms'],
-			['Work accommodation (apartments, houses, hostels)', 'Separate rooms for couples', 'Work accommodation with children from 8 years old', 'Supplement for own accommodation'],
-			['Document processing', 'Polish work visa', 'Student certificate', 'Paragraph 24 in Germany', 'Registration, tax number, insurance, and bank account']]
+		apply: {title: 'Stages of employment',
+			description:[
+				{
+					title: 'Choosing a Job',
+					description: 'Choose a job that interests you. Our specialists conduct individual selection of options to satisfy your needs.'
+				},
+				{
+					title: 'Document Processing',
+					description: 'Everything suits you? Great! Now you need to process the documents. Our managers will help you with this.'
+				},
+				{
+					title: 'Arrival and Settlement',
+					description: 'After processing the documents, it is important to follow the instructions provided by the manager accurately. You will be contacted by a coordinator or office to organize settlement in the residential area.',
+				},
+				{
+					title: 'Going to Work',
+					description: 'Continue to keep in touch with your manager. He will help you with organizing your work.',
+				}
+			]},
+		features: {title: 'Benefits of working with us',
+			benefits:[['Official employment', 'Verified employers', 'Vacancies for men, women, and couples', 'Vacancies under Umowa Zlecenia and Umowa o pracę terms'],
+				['Work accommodation (apartments, houses, hostels)', 'Separate rooms for couples', 'Work accommodation with children from 8 years old', 'Supplement for own accommodation'],
+				['Document processing', 'Polish work visa', 'Student certificate', 'Paragraph 24 in Germany', 'Registration, tax number, insurance, and bank account']]}
 	},
 	uk:{
 		header: {
@@ -346,6 +386,7 @@ export const translations = {
 			p1: 'Ми працюємо тільки з перевіреними роботодавцями, тому працевлаштування тільки офіційне.',
 			p2: 'Якщо у вас немає робочої візи або запрошення на роботу, але ви бажаєте працювати - немає проблем, ми допоможемо вам оформити всі документи.',
 			p3: 'Ми проводимо повний супровід як на етапі підбору, так і на протязі всього періоду трудової діяльності. Наші координатори вас ніколи не залишать з невирішеним питанням.',
+			p4: 'Ми є провідними експертами у галузі працевлаштування за кордоном, надаючи найвищу якість послуг. Ми добре розуміємо ваші запитання та потреби, оскільки особисто пройшли кожен етап цього процесу та володіємо глибоким розумінням нашої роботи.'
 		},
 		contacts: {
 			title: 'Напишіть нам зараз, щоб дізнатися більше інформації!'
@@ -478,9 +519,10 @@ export const translations = {
 				}
 			]
 		},
-		features: [['Офіційне працевлаштування', 'Перевірені роботодавці', 'Вакансії для чоловіків, жінок та сімейних пар', 'Вакансії за умовами Umowa Zlecenia та Umowa o pracę'],
-			['Робоче житло (квартири, будинки, гуртожитки)', 'Окремі кімнати для сімейних пар', 'Робоче житло з дітьми від 8 років', 'Додаткова оплата за власне житло'],
-			['Виготовлення документів', 'Польська робоча віза', 'Довідка студента', 'Параграф 24 в Німеччині', 'Прописка, податковий номер, страхування та банківський рахунок']]
+		features: {title: 'Переваги працевлаштування через нас',
+			benefits: [['Офіційне працевлаштування', 'Перевірені роботодавці', 'Вакансії для чоловіків, жінок та сімейних пар', 'Вакансії за умовами Umowa Zlecenia та Umowa o pracę'],
+				['Робоче житло (квартири, будинки, гуртожитки)', 'Окремі кімнати для сімейних пар', 'Робоче житло з дітьми від 8 років', 'Додаткова оплата за власне житло'],
+				['Виготовлення документів', 'Польська робоча віза', 'Довідка студента', 'Параграф 24 в Німеччині', 'Прописка, податковий номер, страхування та банківський рахунок']]}
 		,
 		footer: {
 			title: 'Посилання на групи з вакансіями',
@@ -488,5 +530,25 @@ export const translations = {
 			link2: 'Вакансії в західній Європі',
 			link3: 'Вакансії в Естонії',
 		},
+		apply: {title: 'Етапи трудоустрою',
+			description:[
+				{
+					title: 'Вибір вакансії',
+					description: 'Виберіть вакансію, яка вас цікавить. Наші фахівці проводять індивідуальний підбір варіантів, щоб задовольнити ваші потреби.'
+				},
+				{
+					title: 'Оформлення документів',
+					description: 'Все влаштовує? Чудово! Тепер вам потрібно оформити документи. Наші менеджери допоможуть вам у цьому.'
+				},
+				{
+					title: 'Приїзд та поселення',
+					description: 'Після оформлення документів важливо точно дотримуватися інструкцій, наданих менеджером. Вас зв\'яжуть з координатором або офісом для організації поселення у житловій площі.',
+				},
+				{
+					title: 'Вихід на роботу',
+					description: 'Продовжуйте підтримувати звʼязок з вашим менеджером. Він допоможе вам з організацією виходу на роботу.',
+
+				}
+			]},
 		button: 'Написати менеджеру'
 	}};
