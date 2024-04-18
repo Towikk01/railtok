@@ -530,7 +530,7 @@ export const translations = {
 			link2: 'Вакансії в західній Європі',
 			link3: 'Вакансії в Естонії',
 		},
-		apply: {title: 'Етапи трудоустрою',
+		apply: {title: 'Етапи працевлаштування',
 			description:[
 				{
 					title: 'Вибір вакансії',
