@@ -14,7 +14,7 @@ const Heading = () => {
 					<h1 className="md:text-[50px] text-[40px] lg:text-[55px]  text-white font-bold lg:leading-[67px] text-center">
 						{currentTranslations.heading.title}
 					</h1>
-					<p className="text-[26px] text-[#ADD9E9]  leading-8 text-center">
+					<p className="text-[26px] text-white  leading-8 text-center">
 						{currentTranslations.heading.description}
 					</p>
 				</div>

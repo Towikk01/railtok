@@ -18,7 +18,7 @@ const DynamicBlock = ({  title, description,  isLast = true }) => {
 				<h3 className="text-[18px] text-white lg:whitespace-pre md:text-[24px] border-b border-white w-fit md:leading-8 lg: font-medium md:font-normal text-textPrimary leading-[26px]">
 					{title}
 				</h3>
-				<p className="text-[18px] md:text-base text-white  md:leading-[26px] text-white/95 font-normal leading-[22px]  md:mb-0 md:mr-[30px] lg:mr-0 lg:max-w-[306px] md:max-w-[163px]">
+				<p className="text-[20px] md:text-base text-white  md:leading-[26px] text-white/95 font-normal leading-[22px]  md:mb-0 md:mr-[30px] lg:mr-0 lg:max-w-[306px] md:max-w-[163px]">
 					{description}
 				</p>
 			</div>

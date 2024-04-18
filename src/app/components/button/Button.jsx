@@ -72,9 +72,9 @@ const Button = ({ onClick }) => {
 					<FiMessageSquare className="text-4xl" />
 				</button>
 			</div>
-			<div className="text-white font-semibold animate-bounce" style={{ textAlign: 'center' }}>
-				<span className="block text-[15px] text-black">{currentTranslations.button.split(' ')[0].toUpperCase()}</span>
-				<span className="block text-[15px] text-black">{language === 'en'? '' :currentTranslations.button.split(' ')[1].toUpperCase()}</span>
+			<div className="text-white font-semibold bg-blue-700 rounded-3xl px-3 py-1 animate-bounce" style={{ textAlign: 'center' }}>
+				<span className="block text-[15px]">{currentTranslations.button.split(' ')[0].toUpperCase()}</span>
+				<span className="block text-[15px]">{language === 'en'? '' :currentTranslations.button.split(' ')[1].toUpperCase()}</span>
 			</div>
 		</div>
 	);
