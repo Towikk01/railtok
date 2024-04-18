@@ -61,18 +61,18 @@ const Button = ({ onClick }) => {
 	const { language } = useLanguage();
 	const currentTranslations = translations[language];
 	return (
-		<div className="contact-btn-wrapper relative z-50 flex flex-col flex flex-col gap-2 items-center justify-center">
+		<div className="contact-btn-wrapper relative z-50 flex flex-col animate-bounce gap-2 items-center justify-center cursor-pointer" onClick={onClick}>
 			<div className="relative flex items-center justify-center">
 				<span className="wave-effect"></span>
 				<button
 					className="contact-btn text-[#f4f3ed] z-50 text-xl bg-blue-700 rounded-full p-3
 							   hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center"
-					onClick={onClick}
+
 				>
 					<FiMessageSquare className="text-4xl" />
 				</button>
 			</div>
-			<div className="text-white font-semibold bg-blue-700 rounded-3xl px-3 py-1 animate-bounce" style={{ textAlign: 'center' }}>
+			<div className="text-white font-semibold bg-blue-700 rounded-3xl px-3 py-1" style={{ textAlign: 'center' }}>
 				<span className="block text-[15px]">{currentTranslations.button.split(' ')[0].toUpperCase()}</span>
 				<span className="block text-[15px]">{language === 'en'? '' :currentTranslations.button.split(' ')[1].toUpperCase()}</span>
 			</div>

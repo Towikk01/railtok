@@ -11,7 +11,7 @@ const Heading = () => {
 		<section id="#heading" className="md:h-[670px]  w-full flex flex-col py-5 justify-center px-5 border-b border-black">
 			<div className="flex flex-col justify-center self-center w-full md:w-3/4 items-center gap-10">
 				<div className="flex flex-col justify-center items-center gap-5">
-					<h1 className="md:text-[50px] text-[40px] lg:text-[55px]  text-white font-bold lg:leading-[67px] text-center">
+					<h1 className="md:text-[50px] text-[40px] lg:text-[55px]  text-white font-bold  text-center">
 						{currentTranslations.heading.title}
 					</h1>
 					<p className="text-[26px] text-white  leading-8 text-center">
