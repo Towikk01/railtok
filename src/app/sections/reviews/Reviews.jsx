@@ -17,7 +17,7 @@ const Reviews = () => {
 		<section id="reviews" className="flex flex-col md:flex-row w-full px-5  gap-10 py-10 border-black border-b">
 			<div className="flex flex-col gap-2 sm:gap-5 w-full">
 				<h4 className="sm:text-start text-center text-[50px] sm:text-[39px] text-white">{currentTranslations.review.title}</h4>
-				<p className='text-[#ADD9E9] text-center sm:text-start text-[20px]'>
+				<p className='text-white text-center sm:text-start text-[20px]'>
 					{currentTranslations.review.description}
 				</p>
 			</div>
