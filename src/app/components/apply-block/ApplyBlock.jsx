@@ -17,7 +17,7 @@ const DynamicBlock = ({ title, description, isLast = false }) => {
 						{title}
 					</h3>
 				)}
-				<p className={`${title ? 'text-[21px]' : 'text-[20px] mt-12 md:mt-0'} md:text-[20px] text-white  md:leading-[26px] text-white/95 font-normal leading-[22px]  md:mb-0 md:mr-[30px] lg:mr-0 lg:max-w-[306px] md:max-w-[163px]`}>
+				<p className={`${title ? 'text-[21px]' : 'text-[20px] mt-[2.8rem] md:mt-0'} md:text-[20px] text-white  md:leading-[26px] text-white/95 font-normal leading-[22px]  md:mb-0 md:mr-[30px] lg:mr-0 lg:max-w-[306px] md:max-w-[163px]`}>
 					{description}
 				</p>
 			</div>
