@@ -9,7 +9,7 @@ import ApplyBlock from '@/app/components/apply-block/ApplyBlock';
 const AboutSection = () => {
 	const { language, setLanguage } = useLanguage();
 	const currentTranslations = translations[language];
-	const data = [{item: currentTranslations.about.p1}, {item:currentTranslations.about.p2}, {item:currentTranslations.about.p3, isLast : true}, {item:currentTranslations.about.p4, isLast: true}];
+	const data = [{item: currentTranslations.about.p1}, {item:currentTranslations.about.p2}, {item:currentTranslations.about.p3}, {item:currentTranslations.about.p4, isLast: true}];
 	return (
 		<section id="about" className="flex md:flex-row w-full px-5 py-10 border-black border-b">
 			<div className="w-full flex flex-col md:flex-row items-center justify-between gap-8">
