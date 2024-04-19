@@ -8,7 +8,7 @@ import {translations} from '@/app/translations';
 const Applying = () => {
 	const { language, setLanguage } = useLanguage();
 	const currentTranslations = translations[language];
-	const data = [currentTranslations.apply.description[0], currentTranslations.apply.description[1], currentTranslations.apply.description[2], {...currentTranslations.apply.description[3]}];
+	const data = [currentTranslations.apply.description[0], currentTranslations.apply.description[1], {...currentTranslations.apply.description[2], isLast: true}, {...currentTranslations.apply.description[3]}];
 	
 	return (
 		<section id="contact" className="flex flex-col w-full px-5 py-10 gap-5 items-center border-black border-b">
