@@ -1,5 +1,6 @@
 import { Fenix } from 'next/font/google';
 import './globals.css';
+import Head from 'next/head';
 import Header from '@/app/components/header/Header';
 import ParticlesBG from '@/app/components/particles/ParticlesBG';
 import Footer from '@/app/components/footer/Footer';
@@ -20,8 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" style={{scrollBehavior:'smooth'}}>
-			<body className={`${fenix.className} 'scroll-smooth`}>
-				<Script id='fb-pixel' strategy='afterInteractive'>
+			<Head>
+				<script id='fb-pixel'>
 					{`
            !function(f,b,e,v,n,t,s)
 			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -34,7 +35,9 @@ export default function RootLayout({ children }) {
 			fbq('init', '3809540382611782');
 			fbq('track', 'PageView');
             `}
-				</Script>
+				</script>
+			</Head>
+			<body className={`${fenix.className} 'scroll-smooth`}>
 				<LanguageProvider>
 					<Header />
 					<main className="pt-[60px] lg:pt-[85px]">
