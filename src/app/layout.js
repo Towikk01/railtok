@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" style={{scrollBehavior:'smooth'}}>
-			<Script id="gtm" strategy="afterInteractive" dangerouslySetInnerHTML={{
+			<Script id="gtm" strategy="afterInteractive" dangerouslySetInnerHTML={ {
 				__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 \t\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 \t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
