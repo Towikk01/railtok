@@ -2,8 +2,9 @@
 import React from 'react';
 import {useLanguage} from '@/app/LanguageContext';
 import {translations} from '@/app/translations';
-import SimpleButton from '@/app/components/button/SimpleButton';
 import ApplyBlock from '@/app/components/apply-block/ApplyBlock';
+import Image from 'next/image';
+import {HeadingImage} from '../../../../public';
 
 
 const AboutSection = () => {
@@ -19,14 +20,16 @@ const AboutSection = () => {
 						<ApplyBlock key={index} description={item.item} isLast={item.isLast} className="text-[20px] text-white leading-8 text-center"/>
 					))}
 				</div>
-				<div className="flex flex-col gap-2 items-center">
+				<div className="flex flex-col md:gap-2 items-center">
+					<div className="w-full flex justify-center">
+						<Image src={HeadingImage} alt="smthn" width={600} height={800}/>
+					</div>
 					<h4 className={'gradient text-[#ADD9E9] text-center text-[40px]'}>Railtok Recruitment</h4>
-					<SimpleButton text={currentTranslations.button.title}/>
 				</div>
 			</div>
 		</section>
 	)
-	;
+		;
 };
 
 export default AboutSection;

@@ -1,8 +1,6 @@
-export {default as PolandV} from './PolandVider.png'
-export {default as EuV} from './EuropeViber.png'
-export {default as EstoniaV} from './EstoniaViber.png'
+
 export {default as Logo} from './Logo.png'
-export {default as HeadingImage} from './Heading.png'
+export {default as HeadingImage} from './1logo.png'
 export {default as About} from './About.webp'
 export {default as Third} from './3d.webp'
 export {default as House1} from './house-1.jpeg'
